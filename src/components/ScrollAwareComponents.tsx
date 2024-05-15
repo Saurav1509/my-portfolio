@@ -20,7 +20,7 @@ export const ScrollAwareComponents = ({ children, scroll }: { children: React.Re
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
-    }, []);
+    }, [handleScroll]);
 
     return (
         <div className={`${showInfiniteMovingCards ? 'transition-opacity duration-500 ease-in opacity-100' : 'transition-opacity duration-500 ease-out opacity-0'}`}>

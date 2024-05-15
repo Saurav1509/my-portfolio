@@ -22,6 +22,7 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     imageCard: ImageCardProps;
+    id: number
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -33,7 +34,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  }, [addAnimation]);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -96,6 +97,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
+            key={item.id}
             className="w-[100px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[150px]"
             style={{
               background:
