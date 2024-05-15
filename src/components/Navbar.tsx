@@ -14,7 +14,7 @@ export default function Navbar() {
         </Avatar>
       </div>
       <div className="font-bold flex text-2xl ml-4 text-primary">
-        Saurav's
+        Saurav
         <div className="text-secondary pl-2"> Web Portfolio</div>
       </div>
     </div>
