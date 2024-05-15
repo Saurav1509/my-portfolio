@@ -17,12 +17,26 @@ import { TextArea } from "./TextArea"
 import { RatingSlider } from "./RatingSlider"
 import { useState } from "react"
 import { feedback } from "@/actions/feedback/route"
+import { LoadingButton } from "./LoadingButton"
 
 export function Feedback() {
 
     const [email, setEmail] = useState("");
     const [content, setContent] = useState("");
     const [rating, setRating] = useState(0);
+    const [showLoader, setShowLoader] = useState(false)
+
+    const onSubmit = async () => {
+        setShowLoader(true)
+        console.log("submit clicked")
+        console.log(showLoader)
+        const res = await feedback(email, content, rating)
+        console.log(res)
+        if (res == true) {
+            setShowLoader(false)
+        }
+
+    }
 
     return (
         <Dialog>
@@ -76,15 +90,7 @@ export function Feedback() {
                     </div>
                 </div>
                 <DialogFooter>
-                    <Button type="submit" onClick={async () => {
-                        const res = await feedback(email, content, rating)
-                        console.log(res)
-                        if (res == true) {
-
-                        }
-                        <DialogClose />
-
-                    }}>Submit</Button>
+                    <LoadingButton onSubmit={onSubmit} text="Submit" loading={showLoader} disabled={showLoader} />
                 </DialogFooter>
             </DialogContent>
         </Dialog>

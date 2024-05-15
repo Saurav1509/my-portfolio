@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react";
 import { Feedback } from "./Feedback";
 
-export const ScrollAwareComponents = ({ children }: { children: React.ReactNode }) => {
+export const ScrollAwareComponents = ({ children, scroll }: { children: React.ReactNode, scroll: number }) => {
     const [showInfiniteMovingCards, setShowInfiniteMovingCards] = useState(false);
 
     const handleScroll = () => {
-        if (window.scrollY > 20) {
+        if (window.scrollY > scroll) {
             setShowInfiniteMovingCards(true);
         } else {
             setShowInfiniteMovingCards(false);
