@@ -1,38 +1,32 @@
 export const projects = [
     {
-        title: "Stripe",
+        title: "Blogging App",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "Built a Full Stack Blogging Website using Typescript, Hono, React, Cloudflare workers, Prisma ORM, and PostgreSQL.",
+        link: "https://github.com/Saurav1509/Blogging-App",
     },
     {
-        title: "Netflix",
+        title: "Full Stack Wallet App",
         description:
-            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-        link: "https://netflix.com",
+            "Developed a Full Stack Wallet transaction Application similar to PayTM utilizing MERN Stack. Utilized Node.js ReactJS, MongoDB, JavaScript, JSON Web Tokens, and Zod.",
+        link: "https://github.com/Saurav1509/PayTM-Clone-App",
     },
     {
-        title: "Google",
+        title: "Portfolio Website",
         description:
-            "A multinational technology company that specializes in Internet-related services and products.",
-        link: "https://google.com",
+            "Developed my own Portfolio website using Next.js, typescript, ShadCN UI, Prisma ORM, PostgreSQL Integrated a “Feedback” feature for visitors to provide inputs and rate my website",
+        link: "https://github.com/Saurav1509/my-portfolio",
     },
     {
-        title: "Meta",
+        title: "MERN Todo Application",
         description:
-            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-        link: "https://meta.com",
+            "Developed a Full Stack MERN Todo Application. Tech Stack used – ReactJS, Node.JS, MongoDB.",
+        link: "https://github.com/Saurav1509/Full-Stack-Todo-Application",
     },
     {
-        title: "Amazon",
+        title: "URLShortner-Nodejs",
         description:
-            "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-        link: "https://amazon.com",
-    },
-    {
-        title: "Microsoft",
-        description:
-            "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-        link: "https://microsoft.com",
+            "A URL shortner app created using NodeJS",
+        link: "https://github.com/Saurav1509/URLShortner-Nodejs",
     },
 ];
