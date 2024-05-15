@@ -1,5 +1,6 @@
 export const iconsList = [
   {
+    id: 1,
     imageCard: {
       imageLink: "/AWS.png",
       width: 100,
@@ -8,6 +9,7 @@ export const iconsList = [
     }
   },
   {
+    id: 2,
     imageCard: {
       imageLink: "/Nextjs.jpg",
       width: 100,
@@ -16,6 +18,7 @@ export const iconsList = [
     }
   },
   {
+    id: 3,
     imageCard: {
       imageLink: "/Nodejs.png",
       width: 100,
@@ -24,6 +27,7 @@ export const iconsList = [
     }
   },
   {
+    id: 4,
     imageCard: {
       imageLink: "/postgres.jpg",
       width: 100,
