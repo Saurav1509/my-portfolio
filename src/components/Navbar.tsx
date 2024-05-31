@@ -20,8 +20,6 @@ export default function Navbar() {
     </div>
     <div className="flex">
       <div className="pl-2 pr-2 z-10"><Link className={buttonVariants()} href={"/"}>Home</Link></div>
-      <div className="pl-2 pr-2 z-10"><Link className={buttonVariants({ variant: "outline" })} href={"/about"}>About Me</Link></div>
-      <div className="pl-2 pr-2 z-10"><Link className={buttonVariants({ variant: "outline" })} href={"/contact"}>Contact</Link></div>
     </div>
   </div>
 }

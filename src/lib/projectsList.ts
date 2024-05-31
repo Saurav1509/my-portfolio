@@ -29,4 +29,16 @@ export const projects = [
             "A URL shortner app created using NodeJS",
         link: "https://github.com/Saurav1509/URLShortner-Nodejs",
     },
+    {
+        title: "Solana DevNet Token Transfer",
+        description:
+            "Utilizes Web3.js library, NextJS, TypeScript to connect any Web3 Wallet to the application. This is a application in which you can connect your wallet and send SOL to your friends.",
+        link: "https://github.com/Saurav1509/Solana-Transfer-Frontend",
+    },
+    {
+        title: "Solana Token Minting Application",
+        description:
+            "Utilizes Web3.js library, NextJS, TypeScript to Mint(create) your own SOLANA blockchain Token on the Devnet. Also post creating your own Token you can Mint any number of them and send then to your freinds if you want.",
+        link: "https://github.com/Saurav1509/Solana-Token-Mint-frontend",
+    },
 ];

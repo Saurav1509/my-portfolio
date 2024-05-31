@@ -24,20 +24,20 @@ export default function Home() {
       </div>
       <ScrollAwareComponents scroll={5}>
         <div className="flex justify-center pt-16 pb-4">
-          <HeadingGenerate words=" Hey look!!! these are my Skills" />
+          <HeadingGenerate words="Learning... Processing... Developing... Shipping to Prod" />
         </div>
         <div className="flex justify-center">
           <InfiniteMovingCards
             items={iconsList}
             direction="right"
-            speed="normal"
+            speed="slow"
           />
         </div>
       </ScrollAwareComponents>
 
       <ScrollAwareComponents scroll={95}>
         <div className="flex justify-center pt-24">
-          <HeadingGenerate words=" Hey look!!! these are my Projects" />
+          <HeadingGenerate words="The Awesome Projects showcase" />
         </div>
         <div className="max-w-5xl mx-auto px-8">
           <HoverEffect items={projects} />
