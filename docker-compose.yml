@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" # Map your container's port to your host machine's port
+    environment:
+      - NODE_ENV=production # Example environment variable
+      # Include other environment variables here if needed
+    env_file:
+      - .env
+    volumes:
+      - .:/app # Bind mount the current directory to /app in the container
+    command: [ "npm", "start" ]
