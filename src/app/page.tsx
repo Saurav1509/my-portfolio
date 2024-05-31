@@ -1,4 +1,4 @@
-
+"use client"
 import { DeatilsCard } from "@/components/DetailsCard";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
@@ -10,6 +10,8 @@ import { ScrollAwareComponents } from "@/components/ScrollAwareComponents";
 import { Feedback } from "@/components/Feedback";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { HeadingGenerate } from "@/components/HeadingGenerate";
+import ScrollToTop from "react-scroll-to-top";
+import ScrollTop from "@/components/ScrollTop";
 
 export default function Home() {
   return (
@@ -43,12 +45,7 @@ export default function Home() {
           <HoverEffect items={projects} />
         </div>
       </ScrollAwareComponents>
-
-      <ScrollAwareComponents scroll={99}>
-        <div className="flex justify-center pb-16">
-          <Feedback />
-        </div>
-      </ScrollAwareComponents>
+      <ScrollTop />
       <BackgroundBeams />
     </div>
   );
