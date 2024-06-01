@@ -4,9 +4,10 @@ WORKDIR /app
 
 COPY package.json .
 COPY bun.lockb .
-COPY prisma/. /prisma/
 
 RUN npm i
+
+COPY prisma ./prisma
 RUN npx prisma generate
 
 COPY . .
