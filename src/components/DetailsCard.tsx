@@ -58,7 +58,7 @@ export function DeatilsCard({ className, ...props }: CardProps) {
         </div>
       </CardContent>
       <CardFooter>
-        <Link href="https://storage.googleapis.com/devops-saurav-portfolio/Resume_Visibility.pdf" className="z-10 flex justify-center" target="_blank">
+        <Link href="https://storage.googleapis.com/devops-saurav-portfolio/Saurav_Sayana_Resume.pdf" className="z-10 flex justify-center" target="_blank">
           <Button className="w-full z-10">
             Download Full Resume
           </Button>
