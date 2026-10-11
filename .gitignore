@@ -20,6 +20,9 @@
 .DS_Store
 *.pem
 
+# Windows download metadata
+*:Zone.Identifier
+
 # debug
 npm-debug.log*
 yarn-debug.log*
